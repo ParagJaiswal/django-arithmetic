@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="solution" method="post">
+		{% csrf_token %}
+		<h1 align="center" style="background-color: grey">Here you can perform arithmetic operation</h1>
+		<input type="text" name="num1" placeholder="Enter Length/Radius" value="{{l}}"><br><br>
+		<input type="text" name="num2" placeholder="Enter Breadth" value="{{b}}"><br><br>
+		<input type="submit" name="aot" value="Area Of Triangle">
+		<input type="submit" name="aor" value="Area Of Rectangle">
+		<input type="submit" name="aoc" value="Area Of Circle">
+	</form>
+	{{key}}
+
+</body>
+</html>
